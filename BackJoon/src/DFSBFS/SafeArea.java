@@ -15,8 +15,9 @@ public class SafeArea {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		StringTokenizer st = new StringTokenizer(br.readLine());
-		int n = Integer.parseInt(st.nextToken());
+		int n=Integer.parseInt(br.readLine());
+		
+		StringTokenizer st;
 		arr = new int[n][n];
 		int max = 0;
 		for(int i=0; i<n; i++) {
@@ -29,7 +30,6 @@ public class SafeArea {
 				}
 			}
 		}
-		System.out.println("?");
 		int result = 0;
 		while(max != 0) {
 			//System.out.println(max);
