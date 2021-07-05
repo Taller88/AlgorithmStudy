@@ -44,6 +44,7 @@ public class MiroFind {
 	}
 	private static void bfs(int x, int y) {
 		Queue<Dot> q = new LinkedList<Dot>();
+		
 		q.add(new Dot(x, y));
 		while(!q.isEmpty()) {
 			Dot d = q.poll();
